@@ -1,0 +1,53 @@
+# PlatformIO build output and local tool state
+/.pio/
+/.pioenvs/
+/.piolibdeps/
+
+# Editor state (keep shared extension recommendations)
+/.vscode/*
+!/.vscode/extensions.json
+/.idea/
+*.swp
+*.swo
+*~
+
+# Python environments, bytecode, and test/tool caches
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Web dependencies, generated bundles, and test output
+node_modules/
+/web/dist/
+*.tsbuildinfo
+.vite/
+coverage/
+playwright-report/
+test-results/
+
+# Private battery recordings and local exports
+/.celltrace/
+/.celltrace-*/
+/recordings/
+/exports/
+*.log
+
+# Local configuration and secrets; allow a checked-in template
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Keep dependency lockfiles, documentation images, and source files tracked.

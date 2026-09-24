@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Copyright (c) 2026 Luke Repko
+# SPDX-License-Identifier: GPL-3.0-or-later
+set -euo pipefail
+CELLTRACE_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "$CELLTRACE_ROOT"
+if [[ ! -x .venv/bin/python || ! -f web/dist/index.html ]]; then
+  echo 'Run python3 tools/setup_celltrace.py once to install and build CellTrace.' >&2
+  exit 1
+fi
+exec .venv/bin/python tools/celltrace.py --open "$@"
